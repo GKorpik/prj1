@@ -1,0 +1,191 @@
+/*Variables*/
+
+$color-one: #ffd700; //zloty
+$color-two: #2f3640; //szary
+$color-tree: #dfe4ea; //jasno-szary
+
+$font-logo: 'Fira Sans', sans-serif;
+$font-text: 'Titillium Web', sans-serif;
+$font-header: 'Noto Sans KR', sans-serif;
+
+/*Global*/
+
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+
+body {
+    margin: 0; 
+    font-size: 20px;
+    line-height: 1.7;
+}
+   
+.container {
+	max-width: 1140px;
+	padding: 0 auto;
+	margin: 0 auto;
+} 
+
+
+/* Menu */
+
+.splash {
+	position: relative;
+	background-image: url('https://i.postimg.cc/JnHWBV8d/architecture-black-and-white-building-2121348.jpg');
+	background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    ul {
+    padding: 0;
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    position: absolute; right: 10px;
+    
+
+    .iteam {
+       	display: inline-block;
+        margin: 0 36px 0 0;
+        position: relative;
+
+
+	> .nav-link {
+		text-decoration: none;
+		color: white;
+		font-family: $font-text;
+		font-size: 20px;
+		right: 3px;
+	}
+	}
+	}
+}
+
+.logo {
+	padding: 10px;
+	font-size: 30px;
+	color: $color-one;
+	list-style-type:none;
+	text-decoration: none;
+	font-family: $font-logo;
+}
+
+/*Powitalne*/
+
+
+.splash-inner {
+	margin: auto;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    }
+
+.page-title {
+	margin: 0;
+	font-size: 60px;
+	word-spacing: 5px;
+	font-family: $font-header;
+	color: $color-one;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.page-subtitle {
+	margin: 10px;
+	padding-bottom: 50px;
+	font-size: 20px;
+	font-family: $font-text;
+	color: $color-one;	
+	word-spacing: 5px;
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	min-width: 160px;
+	margin: 24px auto 0 auto;
+	padding: 16px;
+	border-radius: 5px;
+	font-family: $font-text;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	background-color: inherit;
+	background-position: 100% 0;
+	color: white;
+    }
+
+
+/* Services */
+
+.title {
+	font-size: 40px;
+	font-family: $font-header;
+	text-align: center;
+	font-weight: 500px;
+	padding: 50px;
+	margin: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+}
+.services .text {
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	font-family: $font-text;
+}
+
+.icon {
+	color: $color-one;
+	border: $color-one;
+	font-size: 50px;
+	text-align: center;
+	position: center;
+}
+
+
+
+
+
+
+
+/*Footer*/
+    
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    }
+    
+.footer ul li{
+	display: inline-block;
+	background: $color-two;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 0;
+	position: relative;
+
+	a {
+		font-size: 25px;
+		color: white;
+		position: absolute;
+		margin: 15px;
+    }
+    }
+
+.tekst {
+	color: $color-two;
+	padding: 5px;
+	margin: 5px;
+	font-family: $font-text;
+	font-size: 15px;
+}
