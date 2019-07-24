@@ -123,24 +123,25 @@ body {
     }
 
 
+
 /* Services */
 
-.title {
+.title  {
 	font-size: 40px;
 	font-family: $font-header;
 	text-align: center;
 	font-weight: 500px;
-	padding: 50px;
-	margin: 50px;
-	margin-bottom: 0;
-	padding-bottom: 0;
-
+	padding-top: 30px;
+	margin-top: 30px;
+	text-align: center;
 }
+
 .services .text {
-	margin: 5px;
-	padding: 5px;
+	margin: 0;
+	padding-bottom: 0;
 	text-align: center;
 	font-family: $font-text;
+	font-size: 20px;
 }
 
 .icon {
@@ -149,12 +150,75 @@ body {
 	font-size: 50px;
 	text-align: center;
 	position: center;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+
+    }
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: $font-header;
+}
+
+.row {
+    margin-top: 20px;
+    padding-top: 5px;
+
 }
 
 
+/*Portfolio*/
+
+.portfolio {
+    margin: 0;
+    padding: 0;
+    background: $color-tree;
+    }
+    
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+    
+.box {
+    padding: auto;
+    position: relative;
+    background: white;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
 
 
+.image img {
+    
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    }
 
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    font-family: $font-header;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    font-family: $font-header;
+    padding-top: 5px;
+    margin-top: 5px;
+    
+}
 
 
 /*Footer*/
@@ -173,19 +237,31 @@ body {
 	border-radius: 50%;
 	font-size: 0;
 	position: relative;
+	padding: 10px;
+	margin: 0 auto;
 
 	a {
 		font-size: 25px;
 		color: white;
 		position: absolute;
-		margin: 15px;
+		margin: 0 auto;
     }
     }
 
 .tekst {
-	color: $color-two;
+	color: white;
 	padding: 5px;
 	margin: 5px;
 	font-family: $font-text;
 	font-size: 15px;
+	position: absolute; left: 350px;
+}
+
+/*Media*/
+
+@media (max-width: 767px) {
+    .wrapper .footer {
+        flex-direction: column;
+    }
+    
 }
